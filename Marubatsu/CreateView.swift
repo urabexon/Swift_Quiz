@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CreateView: View {
-    @Binding var quizzesArray: [Quiz] // 回答画面で読み込んだ問題を受け取る
-    @State private var questionText = ""  // テキストフィールドの文字を受け取る
-    @State private var selectedAnswer = "○" // ピッカーで選ばれた解答を受け取る
-    let answers = ["○", "Ｘ"] // ピッカーの選択肢
+    @Binding var quizzesArray: [Quiz]
+    @State private var questionText = ""
+    @State private var selectedAnswer = "○"
+    let answers = ["○", "Ｘ"]
 
     var body: some View {
         VStack {
